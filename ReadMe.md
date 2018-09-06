@@ -5,13 +5,13 @@
 5. I have signed up for the ECE434 and general beaglebone google groups
 6. I wrote an etch-a-sketch program... details below
 
-### Etch-A-Sketch!
+# Etch-A-Sketch!
 
-# Implementation
+### Implementation
 This was implemented by using ncurses to read user input and put a `#` on the screen.
 
-# Usage
+### Usage
 Get required libraries with `install.sh`. Make the program with `make`. Run the program by entering `./main <rows> <columns>`.
 
-# Playing
+### Playing
 Use arrow keys or WASD to move, and the home key or spacebar to 'shake' (clear) the screen.
