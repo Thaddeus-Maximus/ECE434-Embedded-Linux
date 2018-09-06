@@ -14,4 +14,4 @@ This was implemented by using ncurses to read user input and put a `#` on the sc
 Get required libraries with `install.sh`. Make the program with `make`. Run the program by entering `./main <rows> <columns>`.
 
 # Playing
-Use arrow keys to move, and the home key to 'shake' (clear) the screen.
+Use arrow keys or WASD to move, and the home key or spacebar to 'shake' (clear) the screen.

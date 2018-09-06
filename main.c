@@ -50,27 +50,32 @@ int main(int argc, char** argv) {
   while ( (ch = getch()) != 'q' ) {
     // Go the correct direction
     switch ( ch ) {
+      case 'w':
       case KEY_UP:
         if ( y > 1 )
           y--;
         break;
      
+      case 's':
       case KEY_DOWN:
         if ( y < rows )
           y++;
         break;
      
+      case 'a':
       case KEY_LEFT:
         if ( x > 1 )
           x--;
         break;
      
+      case 'd':
       case KEY_RIGHT:
         if ( x < cols )
           x++;
         break;
 
       // If home is pressed, wipe the screen
+      case ' ':
       case KEY_HOME:
         
         for (i=0; i<rows; i++) {
