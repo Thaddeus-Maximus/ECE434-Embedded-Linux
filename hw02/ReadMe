@@ -10,3 +10,11 @@
 10. I can't get this to work.
 11. See 10
 
+# Usage:
+./togglegpio.py <port name> <seconds>
+
+make all
+and then...
+./togglegpio <port number> <milliseconds>
+
+buttons_leds.py
