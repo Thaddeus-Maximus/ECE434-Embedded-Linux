@@ -1,0 +1,12 @@
+1. Min: 0V Max: 2.6V
+2. Period: 101 ms
+3. 1 ms off
+4. We are enforcing the period by waiting for 100 ms between code execution. Code execution takes ~ 1ms in this case.
+5. htop reports ~ 5% of the processor is being used.
+6. 184 microseconds is the smallest preiod I can get.
+7. It isn't very stable.
+8. It gets even less stable!
+9. Yes, this enables the period to be shorter.
+10. I can't get this to work.
+11. See 10
+
