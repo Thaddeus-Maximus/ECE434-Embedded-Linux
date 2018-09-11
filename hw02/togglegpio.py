@@ -8,6 +8,7 @@ try:
 	LED = sys.argv[1]
 	delay = float(sys.argv[2])
 	ret = GPIO.setup(LED, GPIO.OUT)
+
 	while True:
 		GPIO.output(LED, 1)
 		time.sleep(delay)
