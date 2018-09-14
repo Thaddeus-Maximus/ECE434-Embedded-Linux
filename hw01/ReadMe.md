@@ -15,3 +15,7 @@ Get required libraries with `install.sh`. Make the program with `make`. Run the 
 
 ### Playing
 Use arrow keys or WASD to move, and the home key or spacebar to 'shake' (clear) the screen.
+
+Well done.  ncurses is a nice touch
+
+Score:  10/10
