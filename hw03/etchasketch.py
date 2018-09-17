@@ -3,10 +3,14 @@
 # Thad Hughes
 # Adapted from https://www.adafruit.com/product/902
 from Adafruit_BBIO.Encoder import RotaryEncoder, eQEP1, eQEP2
+import Adafruit_BBIO.GPIO as GPIO
 import smbus
 import time
 bus = smbus.SMBus(2)  # Use i2c bus 1
 matrix = 0x70         # Use address 0x70
+
+RESET_BTN = "P9_14"
+GPIO.setup(RESET_BTN, GPIO.IN)
 
 bus.write_byte_data(matrix, 0x21, 0)   # Start oscillator (p10)
 bus.write_byte_data(matrix, 0x81, 0)   # Disp on, blink off (p11)
@@ -19,9 +23,13 @@ smile = [0x00, 0x3c, 0x00, 0x42, 0x28, 0x89, 0x04, 0x85,
 
 grid = [0x00 for i in range(16)]
 
-def reset():
-  grid = [0x00 for i in range(16)]
+def reset(arg=None):
+  for i in range(16):
+    grid[i] = 0x00
   bus.write_i2c_block_data(matrix,0,grid)
+
+GPIO.add_event_detect(RESET_BTN, GPIO.BOTH, callback=reset)
+
 
 def flip_to(x,y, color='r'):
   "Flips the LED at x,y to the desigated color (r, g, y, or something else for off)"
@@ -71,3 +79,4 @@ try:
     #time.sleep(0.1)
 except KeyboardInterrupt:
   reset()
+GPIO.cleanup()
