@@ -5,9 +5,9 @@ CFLAGS  := -O3 -g
 #
 # Programs
 #
-all:	gpioThru
+all:	gpioThru speedToggle
 
-gpioToggle: gpioToggle.c beaglebone_gpio.h
+speedToggle: speedToggle.c beaglebone_gpio.h
 	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $<
 
 gpioThru:  gpio2Thru.c beaglebone_gpio.h
@@ -21,10 +21,7 @@ gpioThru:  gpio2Thru.c beaglebone_gpio.h
 	$(CC) $(CFLAGS) $(TOOLS_CFLAGS) -c $< -o $@
 
 clean:
-	rm gpioThru
-
-run: gpioThru
-	./gpioThru
+	rm gpioThru speedToggle
 
 print:
 	@echo LDFLAGS = $(LDFLAGS)
