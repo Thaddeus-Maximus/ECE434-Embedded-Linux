@@ -39,7 +39,7 @@ int main(int argc, char *argv[]) {
     volatile unsigned int *gpio_setdataout_addr_1;
     volatile unsigned int *gpio_cleardataout_addr_1;
     unsigned int reg;
-
+    long delay = atoi(argv[1]);
     // Set the signal callback for Ctrl-C
     signal(SIGINT, signal_handler);
 
@@ -88,10 +88,11 @@ int main(int argc, char *argv[]) {
     // int i=0;
     while(keepgoing) {
         *gpio_setdataout_addr_1   = (1<<18);
+	usleep(delay);
         *gpio_cleardataout_addr_1 = (1<<18);
         // usleep(10);
         // i++;
-        usleep(0);
+        usleep(delay);
     }
 
     // munmap((void *)gpio_addr_0, GPIO0_SIZE);
