@@ -15,3 +15,14 @@ This address (0x21028) is in our data section`
 # Kernel Modules
 
 `make` will compile `gpio_test.c` into `gpio_test.ko` which can be loaded as a kernel module with `sudo insmod gpio_test.ko`. This will copy the value of `P9_15` to `P9_16` when loaded.
+
+========================
+Professor Yoder's Comments
+
+Looks good so far.
+
+I don't see where you compiled a new kernel and got it installed.
+Did you do the make exercise?
+Did you add your project?
+
+Score:  6/10
