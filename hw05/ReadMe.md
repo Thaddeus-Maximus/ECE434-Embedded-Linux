@@ -1,3 +1,7 @@
+# Kernel Installation
+
+See `kernelver.png` to see that version 4.18.9-bone9 of the kernel is installed on the bone.
+
 # Cross-Compiling
 
 To compile and deploy `helloWorld.c` for the bone using compilers in `~/bb-kernel/dl/`, use `./crossCompileEnv.sh`.
