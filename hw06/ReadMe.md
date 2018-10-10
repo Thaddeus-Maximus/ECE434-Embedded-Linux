@@ -11,6 +11,7 @@ A patch that turns the linux kernel into a real-time operating system.
 The ability to run programs with different criticalities; separating programs into different priority levels and scheduling them appropriately
 
 4. How can drivers misbehave?
+=== Missing --may ===
 
 5. What is Δ in Figure 1?
 The time from the event that should trigger something to the time that the code responding to it executes
@@ -38,3 +39,10 @@ The interrupt request handler must finish before the scheduler is reinvoked.
 11. Why can the External event in Figure 4 start sooner?
 
 IRQs are much smaller and jump back to main routines; therefore the "body" of an IRQ can be interrupted to handle a higher-priority interrupt.
+
+========================
+Professor Yoder's Comments
+
+Score:  10/10
+
+Q4 is missing.
