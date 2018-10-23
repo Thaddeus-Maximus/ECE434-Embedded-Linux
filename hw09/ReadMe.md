@@ -1,5 +1,5 @@
 # Usage
-Run `setup.sh <part_number>`.
+Run `. setup.sh <part_number>` (source or `.`, don't just run!), then `make` will build and run the specified part on the correct PRU.
 
 | # |Part     | Result                                                                                | Image                                                         |
 | - | ------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
