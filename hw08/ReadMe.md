@@ -6,3 +6,9 @@ This attempted to look at the difference in response times for real- and non-rea
 
 This histogram isn't very suprising- there is a near-guaruntee of response time under 100 microseconds, and when there isn't any load, latency is lower.
 
+========================
+Professor Yoder's Comments
+
+I wish we could figure out why it won't run some times.
+
+Score:  10/10
