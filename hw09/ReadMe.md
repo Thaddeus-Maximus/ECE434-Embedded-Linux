@@ -9,3 +9,10 @@ Run `. setup.sh <part_number>` (source or `.`, don't just run!), then `make` wil
 | 4 | unroll  | Unrolling really speeds things up; all the way to 2.9 MHz!                            |                                                               |
 | 5 | reading | The response time is around 50 ns.                                                    |                                                               |
 | 6 | analog  | The analog works! I used a 0.1 uf capacitor and the pot turned all the way to 10kOhm. | ![alttxt](imgs/6-analog_1.jpg) ![alttxt](imgs/6-analog_2.jpg) |
+
+========================
+Professor Yoder's Comments
+
+Nice table and pictures.  Yes, analog does work!
+
+Score:  11/10
