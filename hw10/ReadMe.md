@@ -19,3 +19,11 @@ View the sheet here: https://docs.google.com/spreadsheets/d/1YlyEHGg0eXuUOe57MkL
 ## ThingSpeak
 
 Not done yet
+
+========================
+Professor Yoder's Comments
+
+Looks logged.  Time column needed to be formatted as a time for the x-axis to be usable.
+What controls how often you read a distance?
+
+Score:  10/10
